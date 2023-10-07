@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.booking-details {
+    background-color: #fff;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 10%;
+}
+
+h1 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+#booking-list {
+    list-style: none;
+    padding: 0;
+}
+
+#booking-list li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#booking-list li:last-child {
+    margin-bottom: 0;
+}
+
+.update-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.update-button:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+}
+
+/* Responsif untuk layar berukuran kecil (contoh: ponsel) */
+@media screen and (max-width: 768px) {
+    .booking-details {
+        max-width: 95%; /* Lebarkan kontainer pada layar kecil */
+        margin-top: 27%; /* Sesuaikan margin atas */
+    }
+
+    h1 {
+        font-size: 24px; /* Ukuran judul yang lebih kecil pada layar kecil */
+    }
+
+    #booking-list li {
+        padding: 15px; /* Padding yang lebih sedikit pada layar kecil */
+        margin-bottom: 15px; /* Margin yang lebih sedikit pada layar kecil */
+    }
+
+    .update-button {
+        padding: 6px 12px; /* Padding tombol yang lebih kecil pada layar kecil */
+        margin-top: 8px; /* Sesuaikan margin atas tombol */
+    }
+}

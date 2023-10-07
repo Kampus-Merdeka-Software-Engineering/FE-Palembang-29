@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Doctors</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- normalize css -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/style2.css" />
+
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="navbar-brand">
+        <img src="images/logo4.png" alt="site logo">
+      </a>
+      <label for="toggler">
+        <i class="fa fa-bars"></i>
+      </label>
+      <input type="checkbox" id="toggler" name="">
+      <div class="menu">
+        <ul class="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html#services">Service</a></li>
+          <li><a href="index.html#doc-panel">Doctors</a></li>
+          <li><a href="event.html">Event</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <div class="search">
+            <input type="text" id="search" placeholder="Search...">
+            <button type="submit">Search</button>
+          </div>
+        </ul>
+        <!-- Tambahkan elemen pencarian di bawahnya -->
+      </div>      
+    </nav>
+    
+    <div class="section-head text-center" >
+      <h2 class="lead">
+        The Best Doctor gives the least medicines
+      </h2>
+      <p class="text text-lg" style="text-align: center">OUR DOCTORS</p>
+      <div class="line-art flex">
+        <div></div>
+        <img src="images/4-dots.png" />
+        <div></div>
+      </div>
+    </div>
+
+    <div class="doctors-grid">
+      <div class="doctor" data-name="doc-1">
+        <img src="images/doc-1.png" alt="Dr. Samuel Goe" />
+        <h3>Dr. Samuel Goe</h3>
+        <p>Medicine</p>
+      </div>
+      <div class="doctor" data-name="doc-2">
+        <img src="images/doc-2.png" alt="Dr. Elizabeth Ira" />
+        <h3>Dr. Elizabeth Ira</h3>
+        <p>Psikiater</p>
+      </div>
+      <div class="doctor" data-name="doc-3">
+        <img src="images/dok1.jpg" alt="Dr. Samuel Goe" />
+        <h3>Abella Saragih, S.Psi., M.Psi.</h3>
+        <p>Psikolog</p>
+      </div>
+      <div class="doctor" data-name="doc-4">
+        <img src="images/dok2.jpeg" alt="Dr. Elizabeth Ira" />
+        <h3>Adib Setiawan, S.Psi., M.Psi.</h3>
+        <p>Psikiater</p>
+      </div>
+      <div class="doctor" data-name="doc-5">
+        <img src="images/dok3.png" alt="Dr. Samuel Goe" />
+        <h3>Andhini, S.Psi, M.Psi</h3>
+        <p>Psikolog</p>
+      </div>
+      <div class="doctor" data-name="doc-6">
+        <img src="images/dok4.jpeg" alt="Dr. Elizabeth Ira" />
+        <h3>Ahmad Chalifar Hikmawan, S.Psi., M.Psi</h3>
+        <p>Psikolog</p>
+      </div>
+      <div class="doctor" data-name="doc-7">
+        <img src="images/dok5.jpg" alt="Dr. Samuel Goe" />
+        <h3>Andy Chandra, S.Psi., M.Psi</h3>
+        <p>Psikiater</p>
+      </div>
+      <div class="doctor" data-name="doc-8">
+        <img src="images/dok6.jpeg" alt="Dr. Elizabeth Ira" />
+        <h3>Adelina Sarif, Psa Mpsi</h3>
+        <p>Psikiater</p>
+      </div>
+      <div class="doctor" data-name="doc-9">
+        <img src="images/dok7.jpeg" alt="Dr. Samuel Goe" />
+        <h3>Ade Dian Komala, M.Psi</h3>
+        <p>Psikiater</p>
+      </div>
+      <div class="doctor" data-name="doc-10">
+        <img src="images/dok8.jpg" alt="Dr. Elizabeth Ira" />
+        <h3>Agnes Irawati, Psi, M.Psi, CHT</h3>
+        <p>Psikiater</p>
+      </div>
+      <div class="doctor" data-name="doc-11">
+        <img src="images/dok9.jpg" alt="Dr. Samuel Goe" />
+        <h3>Ana Muflihatun, S.Psi, M.Psi</h3>
+        <p>Psikolog</p>
+      </div>
+      <div class="doctor" data-name="doc-12">
+        <img src="images/dok10.png" alt="Dr. Elizabeth Ira" />
+        <h3>Bayu Matria Tripradhana, S.Psi, M.Psi</h3>
+        <p>Psikiater</p>
+      </div>
+      <!-- Tambahkan 10 kotak dokter lainnya di sini -->
+    </div>
+
+    <div class="doctor-preview">
+      <div class="preview" data-target="doc-1">
+        <i class="fas fa-times"></i>
+        <img src="images/doc-1.png" alt="" />
+        <h3>Dr. Samuel Goe</h3>
+        <div class="job">Medicine</div>
+        <div class="buttons">
+          <a href="booking.html" class="appointment">Make Appointment</a>
+        </div>
+      </div>
+
+      <div class="preview" data-target="doc-2">
+        <i class="fas fa-times"></i>
+        <img src="images/doc-2.png" alt="" />
+        <h3>Dr. Elizabeh Ira</h3>
+        <div class="job">Psikiater</div>
+        <div class="buttons">
+          <a href="booking.html" class="appointment">Make Appointment</a>
+        </div>
+      </div>
+
+      <div class="preview" data-target="doc-3">
+        <i class="fas fa-times"></i>
+        <img src="images/dok1.jpg" alt="" />
+        <h3>Abella Saragih, S.Psi., M.Psi.</h3>
+        <div class="job">Psikolog</div>
+        <div class="buttons">
+          <a href="booking.html" class="appointment">Make Apppointment</a>
+        </div>
+      </div>
+
+      <div class="preview" data-target="doc-4">
+        <i class="fas fa-times"></i>
+        <img src="images/dok2.jpeg" alt="" />
+        <h3>Adib Setiawan, S.Psi., M.Psi.</h3>
+        <div class="job">Psikolog</div>
+        <div class="buttons">
+          <a href="booking.html" class="appointment">Make Appointment</a>
+        </div>
+      </div>
+
+      <div class="preview" data-target="doc-5">
+        <i class="fas fa-times"></i>
+        <img src="images/dok3.png" alt="" />
+        <h3>Andhini, S.Psi, M.Psi</h3>
+        <div class="job">Psikolog</div>
+        <div class="buttons">
+          <a href="booking.html" class="appointment">Make Appointment</a>
+        </div>
+      </div>
+
+      <div class="preview" data-target="doc-6">
+        <i class="fas fa-times"></i>
+        <img src="images/dok4.jpeg" alt="" />
+        <h3>Ahmad Chalifar Hikmawan, S.Psi., M.Psi</h3>
+        <div class="job">Psikolog</div>
+        <div class="buttons">
+          <a href="booking.html" class="appointment">Make Appointment</a>
+        </div>
+      </div>
+      <div class="preview" data-target="doc-7">
+        <i class="fas fa-times"></i>
+        <img src="images/dok5.jpg" alt="" />
+        <h3>Andy Chandra, S.Psi., M.Psi</h3>
+        <div class="job">Psikiater</div>
+        <div class="buttons">
+          <a href="booking.html" class="appointment">Make Appointment</a>
+        </div>
+      </div>
+
+      <div class="preview" data-target="doc-8">
+        <i class="fas fa-times"></i>
+        <img src="images/dok6.jpeg" alt="" />
+        <h3>Adelina Sarif, Psa Mpsi</h3>
+        <div class="job">Psikiater</div>
+        <div class="buttons">
+          <a href="booking.html" class="appointment">Make Appointment</a>
+        </div>
+      </div>
+
+      <div class="preview" data-target="doc-9">
+        <i class="fas fa-times"></i>
+        <img src="images/dok7.jpeg" alt="" />
+        <h3>Ade Dian Komala, M.Psi</h3>
+        <div class="job">Psikiater</div>
+        <div class="buttons">
+          <a href="booking.html" class="appointment">Make Appointment</a>
+        </div>
+      </div>
+
+      <div class="preview" data-target="doc-10">
+        <i class="fas fa-times"></i>
+        <img src="images/dok8.jpg" alt="" />
+        <h3>Agnes Irawati, Psi, M.Psi, CHT</h3>
+        <div class="job">Psikiater</div>
+        <div class="buttons">
+          <a href="booking.html" class="appointment">Make Appointment</a>
+        </div>
+      </div>
+
+      <div class="preview" data-target="doc-11">
+        <i class="fas fa-times"></i>
+        <img src="images/dok9.jpg" alt="" />
+        <h3>Ana Muflihatun, S.Psi, M.Psi</h3>
+        <div class="job">Psikolog</div>
+        <div class="buttons">
+          <a href="booking.html" class="appointment">Make Appointment</a>
+        </div>
+      </div>
+
+      <div class="preview" data-target="doc-12">
+        <i class="fas fa-times"></i>
+        <img src="images/dok10.png" alt="" />
+        <h3>Bayu Matria Tripradhana, S.Psi, M.Psi</h3>
+        <div class="job">Psikolog</div>
+        <div class="buttons">
+          <a href="booking.html" class="appointment">Make Appointment</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer  -->
+    <footer id="footer" class="footer text-center">
+      <div class="container">
+        <div class="footer-inner text-white py grid">
+          <div class="footer-item">
+            <h3 class="footer-head">about us</h3>
+            <p class="text text-md">
+              Selamat datang di Situs Kesehatan Mental! Kami adalah sumber
+              informasi dan dukungan untuk semua yang berkaitan dengan kesehatan
+              mental.
+            </p>
+            <address>
+              Medic Clinic <br />
+              69 Deerpark Rd, Mount Merrion <br />
+              Co. Dublin, A94 E9D3 <br />
+              Ireland
+            </address>
+          </div>
+
+          <div class="footer-item">
+            <h3 class="footer-head">tags</h3>
+            <ul class="tags-list flex">
+              <li>medical care</li>
+              <li>emergency</li>
+              <li>therapy</li>
+              <li>medication</li>
+              <li>nurse</li>
+            </ul>
+          </div>
+
+          <div class="footer-item">
+            <h3 class="footer-head">Quick Links</h3>
+            <ul>
+              <li>
+                <a href="terms.html" class="text-white">Terms Of Service</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-item">
+            <h3 class="footer-head">make an appointment</h3>
+            <p class="text text-md">
+              Buatlah janji dengan dokter pilihan anda!!
+            </p>
+            <ul class="appointment-info">
+              <li>8:00 AM - 11:00 AM</li>
+              <li>2:00 PM - 05:00 PM</li>
+              <li>8:00 PM - 11:00 PM</li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <span>mhealthmedic@gmail.com</span>
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                <span>+628 478 2834(00)</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!--<div class = "footer-links">
+                <ul class = "flex">
+                    <li><a href = "#" class = "text-white flex"> <i class = "fab fa-facebook-f"></i></a></li>
+                    <li><a href = "#" class = "text-white flex"> <i class = "fab fa-twitter"></i></a></li>
+                    <li><a href = "#" class = "text-white flex"> <i class = "fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>-->
+      </div>
+    </footer>
+    <!-- end of footer  -->
+
+    <!-- custom js -->
+    <script>
+      const previewContainer = document.querySelector(".doctor-preview");
+      const previewBox = previewContainer.querySelectorAll(".preview");
+
+      document.querySelectorAll(".doctors-grid .doctor").forEach((doctor) => {
+        doctor.onclick = () => {
+          previewContainer.style.display = "flex";
+          const name = doctor.getAttribute("data-name");
+          previewBox.forEach((preview) => {
+            const target = preview.getAttribute("data-target");
+            if (name == target) {
+              preview.classList.add("active");
+            }
+          });
+        };
+      });
+
+      previewBox.forEach((close) => {
+        close.querySelector(".fa-times").onclick = () => {
+          close.classList.remove("active");
+          previewContainer.style.display = "none";
+        };
+      });
+    </script>
+    <script src="js/script.js"></script>
+    <script src="js/penghubung.js"></script>
+  </body>
+</html>

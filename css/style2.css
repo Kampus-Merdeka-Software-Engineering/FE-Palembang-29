@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap");
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.2s linear;
+  text-transform: capitalize;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+/* Styles for the doctor grid using Flexbox */
+.doctors-grid {
+  margin-top: 35px; /* Atur jarak sesuai kebutuhan Anda */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.doctor {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  width: calc(25% - 20px); /* Lebar kotak dokter, dikurangi jarak antar kotak */
+  box-sizing: border-box; /* Memastikan padding tidak memengaruhi lebar kotak */
+  display: flex;
+  flex-direction: column; /* Tampilkan konten dalam kolom */
+  align-items: center; /* Pusatkan konten dalam kotak dokter */
+  outline: 0.1rem solid #ccc;
+  outline-offset: -0.8rem;
+  cursor: pointer;
+}
+
+.doctor:hover {
+  outline: 0.2rem solid #16c5ff;
+  outline-offset: 0;
+}
+
+.doctor img {
+  width: 100px; /* Atur lebar gambar sesuai kebutuhan Anda */
+  height: 100px; /* Atur tinggi gambar sesuai kebutuhan Anda */
+  border-radius: 50%; /* Untuk membuat gambar menjadi lingkaran */
+  margin-bottom: 10px;
+}
+.doctor-preview {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4%;
+}
+
+.doctor-preview .preview {
+  display: none;
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #fff;
+  position: relative;
+  margin: 2rem;
+  width: 40rem;
+}
+
+.doctor-preview .preview.active {
+  display: inline-block;
+}
+
+.doctor-preview .preview img {
+  height: 30rem;
+}
+
+.doctor-preview .preview .fa-times {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  cursor: pointer;
+  color: #444;
+  font-size: 3rem;
+}
+
+.doctor-preview .preview .fa-times:hover {
+  transform: rotate(90deg);
+}
+
+.doctor-preview .preview h3 {
+  color: #444;
+  padding: 0.5rem 0;
+  font-size: 2.5rem;
+}
+
+.doctor-preview .preview p {
+  line-height: 1.5;
+  padding: 1rem 0;
+  font-size: 1.6rem;
+  color: #777;
+}
+
+.doctor-preview .preview .job {
+  padding: 1rem 0;
+  font-size: 2.5rem;
+  color: #27ae60;
+}
+
+.doctor-preview .preview .buttons {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.doctor-preview .preview .buttons a {
+  flex: 1 1 16rem;
+  padding: 1rem;
+  font-size: 1.8rem;
+  color: #444;
+  border: 0.1rem solid #444;
+}
+
+.doctor h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.doctor p {
+  font-size: 14px;
+  color: #888;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 768px) {
+  .doctor-preview .preview img {
+    height: 25rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
+/* For screens smaller than 768px (typical mobile devices) */
+@media screen and (max-width: 768px) {
+  /* Adjust the navigation bar for smaller screens */
+  .navbar {
+    background-color: #33a5ff; /* Change the background color */
+    padding: 10px; /* Add padding to improve touch interactions */
+  }
+
+  .navbar-brand img {
+    max-width: 150px; /* Reduce the logo size */
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 16px; /* Increase font size for navigation links */
+  }
+
+  .search-icon img {
+    width: 20px; /* Reduce the size of the search icon */
+  }
+
+  .search-input {
+    width: 80%; /* Increase input box width */
+  }
+
+  .search-button {
+    font-size: 16px; /* Increase the button font size */
+  }
+
+  /* Adjust the grid layout for doctors on smaller screens */
+  .doctors-grid {
+    display: flex;
+    flex-direction: column; /* Display doctors in a single column */
+    align-items: center; /* Center-align items horizontally */
+  }
+  .doctor img {
+    width: 35%; /* Make images take up the full width of their parent container */
+    max-height: 300px; /* Set a maximum height for consistency */
+    object-fit: cover; /* Ensure the image covers the entire container */
+    border-radius: 50%; /* Optionally, round the corners of the images */
+  }
+  .doctor {
+    width: 100%; /* Make each item take up the full width */
+    max-width: 300px; /* Set a maximum width for consistency */
+    text-align: center; /* Center-align text within each item */
+    margin-bottom: 20px; /* Add spacing between doctor items */
+  }
+
+  /* Adjust the styling of the footer for smaller screens */
+  .footer-inner {
+    padding: 20px; /* Add padding to the footer content */
+    font-size: 14px; /* Reduce font size for footer text */
+  }
+
+  .tags-list {
+    flex-direction: column; /* Display tags in a single column */
+  }
+
+  /* Make appointment information more compact */
+  .appointment-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .appointment-info li {
+    margin-bottom: 10px; /* Add spacing between appointment info items */
+  }
+}

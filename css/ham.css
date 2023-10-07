@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    text-align: justify;
+}
+
+#about-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column; /* Ubah menjadi tampilan kolom pada perangkat seluler */
+    align-items: center;
+    padding: 40px 10%; /* Mengurangi padding atas dan bawah untuk tampilan seluler */
+}
+
+.about-left img {
+    width: 100%; /* Gambar akan mengisi lebar parent */
+    height: auto; /* Biarkan tinggi gambar mengikuti lebar agar proporsional */
+    transform: translateY(0); /* Kembalikan transformasi ke nilai awal */
+    margin-top: 90px;
+    margin-bottom: 25px;
+}
+
+.about-right {
+    width: 100%; /* Gunakan lebar penuh pada tampilan seluler */
+    padding: 5px 0; /* Sesuaikan padding untuk tampilan seluler */
+    margin-top: 2px;
+}
+
+.about-right ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Sesuaikan margin antara elemen-elemen */
+}
+
+.about-right h1 {
+    color: #33A5FF;
+    font-size: 24px; /* Sesuaikan ukuran font */
+    margin-bottom: 10px; /* Sesuaikan margin bawah */
+}
+
+.about-right p {
+    color: #444;
+    line-height: 24px; /* Sesuaikan line-height */
+    font-size: 14px; /* Sesuaikan ukuran font */
+}
+
+.about-right .address ul li {
+    margin-bottom: 5px;
+}
+
+.address .address-logo {
+    margin-right: 10px; /* Sesuaikan margin */
+    color: #33A5FF;
+}
+
+.about-right .expertise ul {
+    width: 100%; /* Gunakan lebar penuh pada tampilan seluler */
+    flex-direction: column; /* Ubah menjadi tampilan kolom pada perangkat seluler */
+}
+
+.expertise h3 {
+    margin-bottom: 10px; /* Sesuaikan margin bawah */
+}
+
+.expertise .expertise-logo {
+    font-size: 16px; /* Sesuaikan ukuran font */
+    margin-right: 10px; /* Sesuaikan margin */
+    color: #33A5FF;
+}
+
+/* Team Section Styles */
+.team {
+    padding: 60px 0;
+    background-color: #f0f0f0;
+}
+
+.team h2 {
+    color: #33A5FF;
+}
+
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.team-member {
+    flex: 0 0 calc(33.33% - 20px);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+    margin-bottom: 20px;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.team-member img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .team-grid {
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+
+    .team-member {
+        flex: 0 0 calc(100% - 20px); /* Full width for team members on small screens */
+    }
+
+    .team-member:not(:last-child) {
+        margin-bottom: 10px; /* Reduce margin between team members */
+    }
+}

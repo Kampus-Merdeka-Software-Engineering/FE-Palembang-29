@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500;700&display=swap');
+
+* {
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    padding: 20px;
+    margin: 0 auto; /* Menambahkan margin secara horizontal */
+    margin-top: 12%;
+}
+.img1 {
+    border-radius: 20px;
+    max-width: 50%;
+    max-height: 400px; /* Batasan tinggi gambar, Anda dapat menyesuaikan sesuai kebutuhan */
+    height: auto;
+    margin: 0 auto; /* Membuat gambar menjadi terletak di tengah horizontal */
+}
+
+.kolom1 {
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #33A5FF;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #999494;
+    text-align: justify;
+    line-height: 1.5;
+    width: 85%;
+    margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+    .wrapper {
+        padding: 20px; /* Padding konten utama saat tampilan responsif */
+        margin-top: 20%; /* Menambahkan margin atas yang lebih besar di tampilan ponsel */
+    }
+
+    h1 {
+        font-size: 24px; /* Ukuran teks judul saat tampilan responsif */
+    }
+
+    p {
+        font-size: 16px; /* Ukuran teks paragraf yang lebih besar di tampilan ponsel */
+        width: 90%; /* Mengurangi lebar teks agar tidak terlalu dekat dengan batas kiri dan kanan */
+        margin: 0 auto; /* Membuat teks menjadi terletak di tengah horizontal */
+        text-align: justify; /* Mengubah teks menjadi rata kiri untuk tampilan ponsel */
+    }
+
+    .img1 {
+        max-width: 100%; /* Mengatur gambar agar sesuai dengan lebar layar ponsel */
+        margin-top: 10px; /* Meninggikan gambar sedikit untuk memisahkan dari teks */
+    }
+}
