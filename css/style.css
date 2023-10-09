@@ -9,7 +9,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url(../images/bgLogin.jpg) no-repeat;
+  background: white; 
   background-size: cover;
   background-position: center;
 }
