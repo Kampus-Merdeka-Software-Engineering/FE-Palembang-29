@@ -12,44 +12,6 @@
     <!-- custom css -->
     <link rel = "stylesheet" href = "css/main.css">
 </head>
-<body>
-    <nav class="navbar" style="background-color: #33A5FF ;">
-        <div class = "container flex">
-            <a href = "index.html" class = "navbar-brand">
-                <img src = "images/logo4.png" alt = "site logo">
-            </a>
-            <button type = "button" class = "navbar-show-btn">
-                <img src = "images/ham-menu-icon.png">
-            </button>
-    
-            <div class = "navbar-collapse bg-black">
-                <button type = "button" class = "navbar-hide-btn">
-                    <img src = "images/close-icon.png">
-                </button>
-                <ul class = "navbar-nav">
-                  <li class = "nav-item">
-                      <a href = "index.html" class = "nav-link">Home</a>
-                  </li>
-                  <li class = "nav-item">
-                      <a href = "index.html#about" class = "nav-link">About</a>
-                  </li>
-                  <li class="nav-item">
-                      <a href="index.html#services" class="nav-link">Service</a>
-                  </li>
-                  <li class="nav-item">
-                      <a href="index.html#doc-panel" class="nav-link">Doctors</a>
-                  </li>
-                  <li class = "nav-item">
-                      <a href = "event.html" class = "nav-link">Event</a>
-                  </li>
-                  <li class="nav-item">
-                      <a href="index.html#contact" class="nav-link">Contact</a>
-                  </li>
-              </ul>
-            </div> 
-        </div>
-    </nav>
-</body>
 <style>
     /* Add your custom styles for the Make an Appointment page here */
 
@@ -121,7 +83,26 @@ label[for="doctor"] {
 
 </style>
 <body>
-    
+    <nav>
+        <a href = "index.html" class = "navbar-brand">
+                      <img src = "images/logo4.png" alt = "site logo">
+                  </a>
+          <label for="toggler">
+            <i class="fa fa-bars"></i>
+          </label>
+        <input type="checkbox" id="toggler" name="">
+          <div class="menu">
+            <ul class="list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="index.html#services">Service</a></li>
+              <li><a href="index.html#doc-panel">Doctors</a></li>
+              <li><a href="event.html">Event </a></li>
+              <li><a href="index.html#contact">Contact</a></li>
+              <li><a href="hasilbooking.html">Hasil Booking</a></li>
+            </ul>
+          </div>
+        </nav>
     <section id="make-appointment" class="make-appointment py">
         <div class="container">
             <div class="section-head">
